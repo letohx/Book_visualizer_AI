@@ -313,26 +313,36 @@
         }
     
         // Функция для отправки текста на API и получения сокращенного текста
-        async function summarizeText(text) {
-            const apiUrl = '/.netlify/functions/proxy';  // URL для обращения к Netlify функции
+        async function sendMessage() {
+            const chatBox = document.getElementById('chatBox');
+            const userInput = document.getElementById('userInput').value;
+
+            if (!userInput) {
+                alert('Please enter a message.');
+                return;
+            }
+
+            chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
+            document.getElementById('userInput').value = '';
 
             try {
-                const response = await fetch(apiUrl, {
+                const response = await fetch('/.netlify/functions/summarize', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ text: text })
+                    body: JSON.stringify({ text: userInput })
                 });
 
                 const data = await response.json();
-                return data.summary || "Ошибка при сокращении текста.";
+                chatBox.innerHTML += `<p><strong>Bot:</strong> ${data.summary}</p>`;
             } catch (error) {
                 console.error('Error:', error);
-                return "Ошибка при сокращении текста.";
+                chatBox.innerHTML += `<p><strong>Bot:</strong> Error processing your request. Please try again later.</p>`;
             }
-        }
 
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
     </script>
     
 </body>
