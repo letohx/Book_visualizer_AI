@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book visualizer AI</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book visualizer AI</h1>
+
+    <!-- Основной текст -->
+    <textarea id="textToSpeak" rows="10" placeholder="Введите текст для озвучки...">
+        Жила-была в одной деревне девочка красоты невиданной: мать любила её без памяти, а бабушка и того больше.
+
+        Сшила как-то раз бабушка любимой внучке шапочку красного цвета и так сильно она девочке понравилась, что и снимать не хотелось. Всюду ходила она в своей шапочке, потому и стали называть её Красной Шапочкой.
+        
+        Раз испекла мама пирожки и говорит своей дочке:
+        
+        — Сходи-ка ты навести бабушку, ей нездоровится. Да отнеси ей пирожки и горшочек масла. Смотри только в лесу не останавливайся и ни с кем не разговаривай.
+        
+        Красная Шапочка была послушной девочкой, она сейчас же собралась и отправилась к бабушке, которая жила в другой деревне.
+        
+        Идёт она по лесной тропинке и тут навстречу ей волк. Волк хотел было её съесть, да побоялся, потому что поблизости был слышен стук дровосеков. Вот он и спрашивает:
+        
+        — Куда ты идёшь, Красная Шапочка?
+        
+        Бедная девочка забыла, что опасно в лесу останавливаться и разговаривать с волками, и отвечает ему:
+        
+        — Иду к бабушке; несу ей пирожки да горшочек масла.
+        
+        — А далеко живёт твоя бабушка? — спрашивает волк.
+        
+        — Очень далеко! — отвечает Красная Шапочка: — вон за той мельницей, что виднеется на опушке леса; а там будет первый дом как войдёшь в деревню.
+        
+        — Знаешь, — говорит ей волк: — пойду-ка и я навещу твою бабушку. — Я пойду этой дорогой, а ты ступай по той: посмотрим, кто из нас быстрее дойдёт.
+        
+        И волк бросился изо всех сил бежать по самой короткой дороге, а девочка побрела не спеша по самой длинной. По пути она собирала букеты и напевала песенки.
+        
+        Прибежал волк первым к бабушкину дому. Постучался:
+        
+        — Тук, тук.
+        
+        — Кто там?
+        
+        — Это я, внучка ваша, Красная Шапочка, — отвечал волк тоненьким голоском: — принесла вам пирожки да горшочек масла.
+        
+        Бабушка лежала в постели, потому что ей немного нездоровилось, и крикнула оттуда:
+        
+        — Дёрни за верёвочку, дверь сама и откроется.
+        
+        Волк дёрнул за верёвочку, дверь открылась. Он бросился на старушку и разом проглотил её, потому что уже больше трёх дней ничего не кушал.
+        
+        Потом он запер дверь, улегся в бабушкину постель и стал поджидать Красную Шапочку, которая через некоторое время добрела до бабушкиного домика и постучалась:
+        
+        — Тук, тук.
+        
+        — Кто там?
+        
+        Услышав грубый голос, Красная Шапочка сперва было испугалась, но подумав, что видимо у бабушки голос осип из-за болезни, отвечала:
+        
+        — Это я, внучка ваша, Красная Шапочка, принесла вам пирожки да горшочек масла.
+        
+        Волк крикнул, как только мог тонким голосом:
+        
+        — Дёрни за верёвочку, дверь сама и откроется.
+        
+        Красная Шапочка дёрнула за верёвочку, дверь открылась. Когда девочка вошла, волк закутался хорошенько в одеяло, чтоб она его не узнала, и говорит:
+        
+        — Положи куда-нибудь пирожок да горшочек масла, и иди приляг со мною, отдохни с дороги.
+        
+        Красная Шапочка прилегла рядом и спрашивает:
+        
+        — Бабушка, бабушка, а почему у тебя такие большие руки?
+        
+        — Это, внучка, чтобы покрепче тебя обнимать.
+        
+        — Бабушка, бабушка, а почему у тебя такие большие уши?
+        
+        — Это, внучка, чтобы получше тебя слышать.
+        
+        — Бабушка, бабушка, а почему у тебя такие большие глаза?
+        
+        — Это, внучка, чтобы получше тебя видеть.
+        
+        — Бабушка, бабушка, а почему у тебя такие большие зубы?
+        
+        — А это, чтобы тебя съесть!
+        
+        И с этими словами злой волк бросился на Красную Шапочку и проглотил её. Хорошо, что в ту пору в лесу работали дровосеки. Они услышали шум и вбежали в дом, где сразу кинулись к волку. Освободили Красную Шапочку и бабушку. Обе были целые и невредимые.
+    </textarea><br>
+
+    <!-- Поле для отображения текущих слов с переносом текста -->
+    <textarea id="currentText" rows="5" readonly></textarea><br>
+
+    <!-- Инпут для выбора количества слов -->
+    <label for="wordCount">Number of words at a time:</label>
+    <input type="number" id="wordCount" min="1" value="50"><br><br>
+
+    <!-- Выпадающий список для выбора голоса -->
+    <label for="voiceselection">Выберите голос:</label>
+    <select id="voiceselection" class="input input--dropdown js--animations">
+        <option value="Russian Female">Russian Female</option>
+        <option value="Russian Male">Russian Male</option>
+        <option value="UK English Female">UK English Female</option>
+        <option value="UK English Male">UK English Male</option>
+        <option value="US English Female">US English Female</option>
+        <option value="US English Male">US English Male</option>
+        <option value="Polish Male">Polish Male</option>
+        <option value="Polish Female">Polish Female</option>
+        <option value="Romanian Female">Romanian Female</option>
+        <option value="Slovak Female">Slovak Female</option>
+        <option value="Ukrainian Female">Ukrainian Female</option>
+        <option value="Serbo-Croatian Male">Serbo-Croatian Male</option>
+        <option value="Bosnian Male">Bosnian Male</option>
+    </select><br><br>
+
+    <div class="container">
+        <div class="input-group">
+            <label>Width</label>
+            <input id="width" type="text" value="1920" size="5">
+        </div>
+        <div class="input-group">
+            <label>Height</label>
+            <input id="height" type="text" value="1080" size="5">
+        </div>
+        <div class="input-group">
+            <label>Style</label>
+            <select id="style"></select>
+        </div>
+        <button onclick="autoSetSize()">Auto size image</button>
+    </div>
+
+    <button onclick="startSpeaking()">Start</button>
+
+    <!-- Поле для отображения сокращенного текста -->
+    <textarea id="query" rows="3" readonly></textarea><br>
+
+    <img src="https://www.research.autodesk.com/app/uploads/2023/01/ai.jpg" id="img" title="Full screen">
+
+    <!-- <video id="wakeLockVideo" loop playsinline muted style="display: none;">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video> -->
+
+    <script>
+        const COHERE_API_KEY = 'COqs0hOvWykttmPf14G3slXbkcFjS5C1GllC3xkP'; // Замените на ваш API ключ
+        const key = "CB877DFF3660DE7C80599E533C090123"
+        const secret = "4A329B2763F032D01B680EF8C1E3F23D"
+        let prd = null;
+        let uuid = '';
+
+        function headers() {
+            return {
+                'X-Key': 'Key ' + key,
+                'X-Secret': 'Secret ' + secret,
+            }
+        }
+
+        function params() {
+            return {
+                type: "GENERATE",
+                style: style.value,
+                width: width.value,
+                height: height.value,
+                num_images: 1,
+                negativePromptUnclip: "",
+                generateParams: {
+                    query: query.value,
+                }
+            }
+        }
+
+        async function generate() {
+            let model_id = 0;
+            {
+                let res = await fetch('https://api-key.fusionbrain.ai/key/api/v1/models', {
+                    method: 'GET',
+                    headers: headers(),
+                });
+                res = await res.json();
+                model_id = res[0].id;
+            }
+
+            let formData = new FormData();
+            formData.append('model_id', model_id);
+            formData.append('params', new Blob([JSON.stringify(params())], { type: "application/json" }));
+
+            let res = await fetch('https://api-key.fusionbrain.ai/key/api/v1/text2image/run', {
+                method: 'POST',
+                headers: headers(),
+                body: formData,
+            });
+            let json = await res.json();
+            console.log(json);
+
+            uuid = json.uuid;
+            if (json.uuid) prd = setInterval(check, 3000);
+
+        }
+
+        async function check() {
+            let res = await fetch('https://api-key.fusionbrain.ai/key/api/v1/text2image/status/' + uuid, {
+                method: 'GET',
+                headers: headers(),
+            });
+            let json = await res.json();
+            console.log(json);
+
+            switch (json.status) {
+                case 'INITIAL':
+                case 'PROCESSING':
+                    break;
+
+                case 'DONE':
+                    document.getElementById('img').src = 'data:image/jpeg;charset=utf-8;base64,' + json.images[0];
+                    clearInterval(prd);
+                    generate(); // Запуск нового запроса на генерацию после отображения картинки
+                    break;
+
+                case 'FAIL':
+                    clearInterval(prd);
+                    break;
+            }
+        }
+
+        function autoSetSize() {
+            let maxWidth = 1920;
+            let maxHeight = 1920;
+            let screenWidth = screen.width;
+            let screenHeight = screen.height;
+
+            let ratio = Math.min(maxWidth / screenWidth, maxHeight / screenHeight, 1);
+
+            let newWidth = Math.floor(screenWidth * ratio);
+            let newHeight = Math.floor(screenHeight * ratio);
+
+            document.getElementById('width').value = newWidth;
+            document.getElementById('height').value = newHeight;
+        }
+
+        window.onload = async () => {
+            let res = await fetch('https://cdn.fusionbrain.ai/static/styles/web');
+            res = await res.json();
+            for (let style of res) {
+                document.getElementById('style').innerHTML += `<option value="${style.name}">${style.name}</option>`;
+            }
+
+            const imgElement = document.getElementById('img');
+            imgElement.addEventListener('click', function () {
+                if (!document.fullscreenElement) {
+                    if (this.requestFullscreen) {
+                        this.requestFullscreen();
+                    } else if (this.mozRequestFullScreen) {
+                        this.mozRequestFullScreen();
+                    } else if (this.webkitRequestFullscreen) {
+                        this.webkitRequestFullscreen();
+                    } else if (this.msRequestFullscreen) {
+                        this.msRequestFullscreen();
+                    }
+                } else {
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                    } else if (document.mozCancelFullScreen) {
+                        document.mozCancelFullScreen();
+                    } else if (document.webkitExitFullscreen) {
+                        document.webkitExitFullscreen();
+                    } else if (document.msExitFullscreen) {
+                        document.msExitFullscreen();
+                    }
+                }
+            });
+        }
+
+        function preventScreenLockWithVideo() {
+            const video = document.getElementById('wakeLockVideo');
+
+            if (video) {
+                video.play().catch(error => {
+                    console.error('Ошибка при воспроизведении видео:', error);
+                });
+
+                // Попытка повторного воспроизведения в случае остановки
+                video.addEventListener('pause', () => {
+                    video.play().catch(error => {
+                        console.error('Ошибка при повторном воспроизведении видео:', error);
+                    });
+                });
+            }
+        }
+
+        // Запускаем предотвращение блокировки экрана при загрузке страницы
+        window.addEventListener('load', preventScreenLockWithVideo);
+
+
+    </script>
+
+    <script>
+        let currentIndex = 0;
+        let isSpeaking = false;
+    
+        // Функция для начала автоматической озвучки и сокращения
+        function startSpeaking() {
+            if (!isSpeaking) {
+                isSpeaking = true;
+                // Сразу сокращаем первый кусок текста и озвучиваем
+                const text = document.getElementById('textToSpeak').value;
+                const wordCount = parseInt(document.getElementById('wordCount').value);
+    
+                const words = text.split(/\s+/);
+                const nextWords = words.slice(currentIndex, currentIndex + wordCount).join(' ');
+    
+                // Обновляем поле текущего текста
+                document.getElementById('currentText').value = nextWords;
+    
+                summarizeText(nextWords).then(query => {
+                    document.getElementById('query').value = query;
+                    speakAndSummarize();
+                });
+            }
+        }
+    
+        // Функция для озвучивания и сокращения текста
+        async function speakAndSummarize() {
+            const text = document.getElementById('textToSpeak').value;
+            const voice = document.getElementById('voiceselection').value;
+            const wordCount = parseInt(document.getElementById('wordCount').value);
+    
+            // Разделяем текст на слова
+            const words = text.split(/\s+/);
+    
+            if (currentIndex >= words.length) {
+                alert("Конец текста.");
+                isSpeaking = false; // Останавливаем процесс
+                return;
+            }
+    
+            // Берем следующие несколько слов
+            const nextWords = words.slice(currentIndex, currentIndex + wordCount);
+            const textToSpeak = nextWords.join(' ');
+    
+            // Обновляем поле текущего текста
+            document.getElementById('currentText').value = textToSpeak;
+    
+            // Сокращаем текст и затем озвучиваем
+            summarizeText(textToSpeak).then(query => {
+                document.getElementById('query').value = query;
+    
+                // Озвучиваем текст
+                responsiveVoice.speak(textToSpeak, voice, {
+                    onend: () => {
+                        // Увеличиваем индекс на количество прочитанных слов
+                        currentIndex += wordCount;
+                        // Переход к следующему отрывку текста
+                        speakAndSummarize();
+                    }
+                });
+                generate();
+            });
+        }
+    
+        // Функция для отправки текста на API и получения сокращенного текста
+        async function summarizeText(text) {
+            const apiUrl = 'https://api.cohere.ai/generate'; // URL для обращения к API
+    
+            const prompt = `Retell the following text in a short sentence of no more than 10 words:\n\n"${text}"`;
+    
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${COHERE_API_KEY}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        model: 'command-xlarge-nightly',
+                        prompt: prompt,
+                        max_tokens: 50,
+                        temperature: 0.7
+                    })
+                });
+    
+                const data = await response.json();
+                return data.text.trim();
+            } catch (error) {
+                console.error('Error:', error);
+                return "Ошибка при сокращении текста.";
+            }
+        }
+    </script>
+    
+</body>
+</html>
