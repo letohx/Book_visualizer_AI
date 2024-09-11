@@ -314,7 +314,7 @@
     
         // Функция для отправки текста на API и получения сокращенного текста
         async function summarizeText(text) {
-            const apiUrl = '/.netlify/functions/summarize'; // URL для обращения к API
+            const apiUrl = 'https://api.cohere.ai/generate'; // URL для обращения к API
     
             const prompt = `Retell the following text in a short sentence of no more than 10 words:\n\n"${text}"`;
     
